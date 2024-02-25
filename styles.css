@@ -30,9 +30,6 @@ fieldset {
   border: none;
   padding: 2rem 0;}
 
-/*fieldset:last-of-type {
-  border-bottom: none;
-}*/
 
 label {
   display: block;
