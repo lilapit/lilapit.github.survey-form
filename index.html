@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description"> Help us improve the game experience!</p>
+    
+    <div>
+      <form id="survey-form" method="post">
+
+        <fieldset class="fix">
+          <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Jane Smith" required></label>
+          <label id="email-label" for="email"> Email <input id="email" type="email" placeholder="janesmith@mail.com" required></label>
+          <label id="number-label" for="number"> Age <input id="number" type="number" min="12" max="120" placeholder="12" required>
+        </fieldset>
+
+        <fieldset >
+          <legend>Would you recommend our game to others?</legend>
+          <label for="recommend"  ><input id="recommend" type="radio" name="recommend" value="1" checked class="inline" /> Definitely yes!</label>
+          <label for="recommend"><input id="maybe-recommend" type="radio" name="recommend" value="2" class="inline"  /> Maybe </label>
+          <label for="recommend"><input class="inline" id="not-sure" type="radio" name="recommend" value="3" /> Not sure </label>
+        </fieldset>
+
+        <fieldset class="fix">
+          <legend>Which media do you use?</legend>
+          <label for="dropdown" id="dropdown-label"> 
+            <select id="dropdown" name="dropdown">
+              <option value="1">Phone</option>
+              <option value="2">PC</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="fix">
+          <legend>What would you like us to improve? (Check all that apply)</legend>
+          <label for="design">
+          <input class="inline" name="design" id="design" value="1" type="checkbox"> Design
+          <label for="graphics">
+          <input class="inline" name="graphics" id="graphics" value="2" type="checkbox"> Graphics
+          <label for="Plot">
+          <input name="Plot" class="inline" id="Plot" value="3" type="checkbox"> Plot
+          <label for="Heroes">
+          <input name="Heroes" class="inline" id="Heroes" value="4" type="checkbox"> Heroes
+          <label for="Weapons">
+          <input name="Weapons" class="inline" id="Weapons" value="5" type="checkbox"> Weapons
+          <label for="Enemies">
+          <input name="Enemies" class="inline" id="Enemies" value="6" type="checkbox"> Enemies
+        </fieldset>
+
+        <fieldset class="fix">
+          <label for="comments">Any recommendations or comments?:
+            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..." "></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <input id="submit" type="submit" />
+        </fieldset>
+      </form>
+    </div>
+
+</html>
